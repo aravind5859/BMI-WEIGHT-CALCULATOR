@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #58a6ff, #2b65f7);
+}
+
+.container {
+    background: rgb(219, 227, 225);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #e9e9e900;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.result {
+    margin: 15px 0;
+}
+
+#bmi-value {
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+}
+
+.bmi-scale {
+    display: flex;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.scale {
+    flex: 1;
+    transition: 0.3s ease-in-out;
+    opacity: 0.2;
+}
+
+.underweight { background: blue; }
+.normal { background: green; }
+.overweight { background: orange; }
+.obese { background: red; }
+
+.bmi-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.calculate {
+    background: #007BFF;
+}
+
+.reset {
+    background: black;
+}
+
+/* Health Tips Section */
+#tips-container {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 10px;
+}
+
+#tips-container h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: brown
+}
+
+#health-tips {
+    font-size: 14px;
+    color: #81570a;
+}
